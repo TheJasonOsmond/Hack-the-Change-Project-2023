@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, Button } from 'react-native';
-import DatabaseService from '../services/DatabaseService';
+import DatabaseService from '../services/DatabaseServices';
 
 const FoodList = () => {
   const [foodItems, setFoodItems] = useState([]);
