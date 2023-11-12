@@ -1,15 +1,16 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
-import Add from './components/add'; // Adjust the import path based on your project structure
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Add/>
+      <Header/>
+      <Footer/>
     </View>
   );
 }

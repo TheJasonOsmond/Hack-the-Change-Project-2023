@@ -2,41 +2,25 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { COLORS, FONTS } from '../constants/themes';
 
-const AddButton = () => {
+const Footer = () => {
   return (
-    <View style={styles.container}>
-      {/* Your main content goes here */}
-      <View style={styles.mainContent}>
-        {/* Content above the button */}
-      </View>
-
-      {/* Footer bar */}
-      <View style={styles.footer}>
-        {/* Circular button */}
-        <TouchableOpacity style={styles.circularButton}>
-          {/* Use the "+" symbol instead of text */}
-          <Text style={styles.buttonText}>+</Text>
-        </TouchableOpacity>
-      </View>
-
-
+    <View style={styles.footer}>
+      {/* Circular button */}
+      <TouchableOpacity style={styles.circularButton}>
+        {/* Use the "+" symbol instead of text */}
+        <Text style={styles.buttonText}>+</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'space-between', // Distribute content vertically
-  },
-  mainContent: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   footer: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
     height: 120, // Adjust the height as needed
-    width: 400, // Set the width to the entire screen width
+    width: 400, //  Adjust the width as needed
     backgroundColor: COLORS.gray2, // Set the background color of the footer
     justifyContent: 'center',
     alignItems: 'center',
@@ -58,4 +42,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AddButton;
+export default Footer;
